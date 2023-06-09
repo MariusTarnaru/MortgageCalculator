@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is my portofolio site of mortgage calculator">
+        <meta name="keywords" content="java, aqa, testing, html, css, javascript">
+        <meta name="author" content="Marius Tarnaru">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img src="mortgageCalculator.webp">
+        <h1 class="title">Hi, acesta este un calculator de rate bancare</h1>
+        <h3>Completeaza cu valorile dorite</h3>
+        <div class="container">
+             <div class="myForm">
+                <form id="formSubmit">
+                    <label>Suma creditata: </label>
+                    <input id="amount" type="number" name="amount" min="10000" max="550000" value="350000"><br>
+                    <label>Perioada in ani: </label>
+                    <input id="period" type="number" name="period" min="1" max="35" step="1" value="25"><br>
+                    <label>Dobanda: </label>
+                    <input id="interest" type="number" name="interest" step="0.01" max="12" value="6.8"><br>
+                    <label>Apasa pentru desfasurator !</label>
+                   <button type="submit">Submit</button>
+                </form>        
+            </div>        
+            <div class="result">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th class="table-title">Luna</th>
+                            <th class="table-title">Rata</th>
+                            <th class="table-title">Balanta</th>
+                            <th class="table-title">Principalul</th>
+                            <th class="table-title">Dobanda</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- rows will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+        
+    </body>
+    <script type="text/javascript" src="index.js" charset="utf-8" defer></script>
+    <footer><h3>&#128512; Marius Tarnaru</h3>
+        <input type="text" placeholder="Enter your email...">
+        <button onclick="location.href='./newsletter.html';" value="Join Newsletter">Join newsletter</button>
+    </footer>
+
+</html>
